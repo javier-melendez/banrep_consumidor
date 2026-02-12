@@ -178,6 +178,92 @@
             padding: 1rem;
         }
 
+        #slideCounter {
+            top: max(1rem, env(safe-area-inset-top));
+            right: max(1.5rem, env(safe-area-inset-right));
+        }
+
+        #navControls {
+            bottom: max(1.5rem, env(safe-area-inset-bottom));
+            right: max(1.5rem, env(safe-area-inset-right));
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 15px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            .slide {
+                height: 100dvh;
+                max-height: 100dvh;
+                box-sizing: border-box;
+                padding: 4.25rem 0.85rem 5.5rem;
+                overflow: hidden;
+            }
+
+            .slide.active {
+                align-items: stretch;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+                overscroll-behavior: contain;
+            }
+
+            .slide > div.h-full {
+                height: auto;
+                min-height: auto;
+            }
+
+            h1 { font-size: clamp(2rem, 9vw, 3rem); }
+            h2 { font-size: clamp(1.5rem, 7.2vw, 2.2rem); }
+            h3 { font-size: clamp(1.1rem, 5vw, 1.4rem); }
+
+            .panel {
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+
+            .left-accent {
+                border-left-width: 3px;
+            }
+
+            .photo-slot,
+            .image-slot {
+                width: min(100%, 230px);
+            }
+
+            .btn-nav {
+                padding: 0.6rem;
+            }
+
+            .btn-nav svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            #slideCounter {
+                top: max(0.65rem, env(safe-area-inset-top));
+                right: max(0.7rem, env(safe-area-inset-right));
+                font-size: 0.65rem;
+                padding: 0.2rem 0.5rem;
+            }
+
+            #navControls {
+                left: 50%;
+                right: auto;
+                bottom: max(0.8rem, env(safe-area-inset-bottom));
+                transform: translateX(-50%);
+                gap: 0.6rem;
+            }
+
+            .progress-bar {
+                height: 4px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -190,7 +276,7 @@
         1 / 16
     </div>
 
-    <div class="fixed bottom-6 right-6 flex gap-3 z-50">
+    <div id="navControls" class="fixed bottom-6 right-6 flex gap-3 z-50">
         <button onclick="prevSlide()" class="btn-nav" title="Anterior">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -663,6 +749,35 @@
             if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
             if (e.key === 'ArrowLeft') prevSlide();
         });
+
+        let touchStartX = null;
+        let touchStartY = null;
+
+        document.addEventListener('touchstart', (e) => {
+            if (e.touches.length !== 1) return;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        }, { passive: true });
+
+        document.addEventListener('touchend', (e) => {
+            if (touchStartX === null || touchStartY === null || e.changedTouches.length !== 1) {
+                touchStartX = null;
+                touchStartY = null;
+                return;
+            }
+
+            const deltaX = e.changedTouches[0].clientX - touchStartX;
+            const deltaY = e.changedTouches[0].clientY - touchStartY;
+            const isHorizontalSwipe = Math.abs(deltaX) > 55 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2;
+
+            if (isHorizontalSwipe) {
+                if (deltaX < 0) nextSlide();
+                if (deltaX > 0) prevSlide();
+            }
+
+            touchStartX = null;
+            touchStartY = null;
+        }, { passive: true });
 
         updateSlide();
     </script>
