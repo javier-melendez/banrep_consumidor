@@ -16,6 +16,7 @@
             --info: #3b82f6;
             --success: #10b981;
             --accent: #facc15;
+            --mobile-air-y: clamp(1.35rem, 3.2vh, 2rem);
         }
 
         html {
@@ -201,15 +202,18 @@
                 height: 100dvh;
                 max-height: 100dvh;
                 box-sizing: border-box;
-                padding: 4.25rem 0.85rem 5.5rem;
+                padding: calc(3.9rem + env(safe-area-inset-top)) 0.85rem calc(4.9rem + env(safe-area-inset-bottom));
                 overflow: hidden;
             }
 
             .slide.active {
+                justify-content: flex-start;
                 align-items: stretch;
                 overflow-y: scroll;
                 -webkit-overflow-scrolling: touch;
                 overscroll-behavior: contain;
+                scroll-padding-top: var(--mobile-air-y);
+                scroll-padding-bottom: var(--mobile-air-y);
             }
 
             .slide > div.h-full {
@@ -218,8 +222,28 @@
             }
 
             .slide > div {
-                padding-top: calc(1.25rem + env(safe-area-inset-top));
-                padding-bottom: calc(1.25rem + env(safe-area-inset-bottom));
+                padding-top: var(--mobile-air-y);
+                padding-bottom: var(--mobile-air-y);
+            }
+
+            .slide.active {
+                scrollbar-width: thin;
+                scrollbar-color: #93c5fd #e2e8f0;
+            }
+
+            .slide.active::-webkit-scrollbar {
+                width: 9px;
+            }
+
+            .slide.active::-webkit-scrollbar-track {
+                background: #e2e8f0;
+                border-radius: 999px;
+            }
+
+            .slide.active::-webkit-scrollbar-thumb {
+                background: linear-gradient(180deg, #60a5fa, #2563eb);
+                border-radius: 999px;
+                border: 2px solid #e2e8f0;
             }
 
             h1 { font-size: clamp(2rem, 9vw, 3rem); }
@@ -730,6 +754,11 @@
                 slide.classList.remove('active');
                 if (index === currentSlide) slide.classList.add('active');
             });
+
+            const activeSlide = slides[currentSlide];
+            if (activeSlide) {
+                activeSlide.scrollTo({ top: 0, behavior: 'auto' });
+            }
 
             const progress = (currentSlide / (slides.length - 1)) * 100;
             progressFill.style.width = `${progress}%`;
