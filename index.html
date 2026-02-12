@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley 1480 de 2011: Derechos del Consumidor y Deberes de Productores/Proveedores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+        :root {
+            --primary: #0056b3;
+            --secondary: #0099cc;
+            --bg-default: #f8fafc;
+            --surface: #ffffff;
+            --info: #3b82f6;
+            --success: #10b981;
+            --accent: #facc15;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+            background-color: var(--bg-default);
+            color: #1f2937;
+            font-size: 22px;
+        }
+
+        .slide {
+            display: none;
+            min-height: 100vh;
+            width: 100%;
+            padding: 6rem 2rem;
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation: slideFadeIn 0.6s ease-out;
+        }
+
+        .slide > div {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 { font-size: clamp(3rem, 5vw, 5rem); }
+        h2 { font-size: clamp(2rem, 3.5vw, 3.5rem); }
+        h3 { font-size: clamp(1.3rem, 2vw, 2rem); }
+
+        @keyframes slideFadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: #cbd5e1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--secondary);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .btn-nav {
+            background: var(--surface);
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            padding: 0.75rem;
+            border-radius: 9999px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .btn-nav:hover {
+            background: var(--primary);
+            color: var(--surface);
+        }
+
+        .slide-chip {
+            border: 1px solid #bfdbfe;
+            border-radius: 9999px;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--primary);
+            background: #eff6ff;
+        }
+
+        .panel {
+            background: var(--surface);
+            border-radius: 1.5rem;
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.08);
+            padding: 1.75rem;
+        }
+
+        .left-accent {
+            border-left: 4px solid var(--secondary);
+        }
+
+        .step-number {
+            background-color: var(--secondary);
+            color: white;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+
+        .image-slot {
+            border: 2px dashed #93c5fd;
+            background: #eff6ff;
+            border-radius: 1rem;
+            width: min(100%, 280px);
+            aspect-ratio: 784 / 1168;
+            min-height: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            color: #1d4ed8;
+            font-weight: 600;
+        }
+
+        .photo-slot {
+            width: min(100%, 280px);
+            aspect-ratio: 784 / 1168;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin: 0 auto;
+            background: #e2e8f0;
+            border: 2px solid #bfdbfe;
+        }
+
+        .photo-slot img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .qa-question {
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            color: #9a3412;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        .qa-answer {
+            background: #ecfeff;
+            border: 1px solid #a5f3fc;
+            color: #155e75;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+    </div>
+
+    <div class="fixed top-4 right-6 z-50 bg-white/90 text-[#0056b3] text-xs font-bold px-3 py-1 rounded-full border border-blue-100 shadow-sm" id="slideCounter">
+        1 / 16
+    </div>
+
+    <div class="fixed bottom-6 right-6 flex gap-3 z-50">
+        <button onclick="prevSlide()" class="btn-nav" title="Anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button onclick="nextSlide()" class="btn-nav" style="background: var(--primary); color: white;" title="Siguiente">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <main id="presentation">
+
+        <section class="slide active bg-[#0056b3]">
+            <div class="h-full flex flex-col justify-center items-center text-center text-white px-6">
+                <p class="uppercase tracking-[0.2em] text-xs md:text-sm mb-4">Programa de Formación Ciudadana</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight max-w-5xl">Derechos del Consumidor y Deberes de Proveedores y Productores</h1>
+                <p class="text-lg md:text-2xl font-light mt-5 max-w-4xl">Análisis práctico de la Ley 1480 de 2011 y su aplicación en la vida cotidiana y empresarial</p>
+                <div class="mt-10 panel bg-white/10 border border-white/30 p-6 max-w-3xl w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-sm md:text-base">
+                        <div>
+                            <p class="uppercase text-[0.7rem] tracking-[0.18em] text-blue-100">Facilitador</p>
+                            <p class="font-bold text-lg">Javier Andrés Meléndez</p>
+                        </div>
+                        <div>
+                            <p class="uppercase text-[0.7rem] tracking-[0.18em] text-blue-100">Fecha</p>
+                            <p class="font-bold text-lg">12 de febrero de 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-10 text-sm md:text-base text-blue-100">Centro Cultural Manizales • Banco de la República</p>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-12 gap-8">
+                <div class="md:col-span-4 bg-[#0056b3] rounded-3xl text-white p-8 flex flex-col justify-center">
+                    <p class="slide-chip bg-white text-[#0056b3] border-0 w-fit mb-4">Agenda</p>
+                    <h2 class="text-3xl font-extrabold mb-5">Ruta de la sesión</h2>
+                    <p class="text-blue-100 text-sm leading-relaxed">Vamos de lo conceptual a lo operativo: derechos, deberes, garantías, e-commerce y rutas ante la SIC.</p>
+                </div>
+                <div class="md:col-span-8 flex flex-col justify-center gap-4 text-sm md:text-base">
+                    <div class="panel left-accent p-5"><strong>1.</strong> Fundamento constitucional y alcance de la Ley 1480.</div>
+                    <div class="panel left-accent p-5"><strong>2.</strong> Derechos del consumidor y deberes de productores/proveedores.</div>
+                    <div class="panel left-accent p-5"><strong>3.</strong> Garantía legal, producto defectuoso y publicidad.</div>
+                    <div class="panel left-accent p-5"><strong>4.</strong> Protección contractual, comercio electrónico y retracto.</div>
+                    <div class="panel left-accent p-5"><strong>5.</strong> Rol de la SIC en inspección, vigilancia y control.</div>
+                    <div class="panel left-accent p-5"><strong>6.</strong> Denuncia administrativa vs demanda jurisdiccional.</div>
+                    <div class="panel left-accent p-5"><strong>7.</strong> ¿Cuándo aplica cada trámite y qué resultado esperar?</div>
+                    <div class="panel left-accent p-5"><strong>8.</strong> Preguntas a la audiencia y respuestas guiadas.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="slide-chip mb-4">Marco jurídico</p>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#0056b3] mb-5">¿Qué protege la Ley 1480 de 2011?</h2>
+                    <div class="space-y-3 text-sm md:text-base">
+                        <div class="panel p-4 left-accent"><strong>Constitución, art. 78:</strong> el Estado debe proteger la calidad de bienes/servicios y la información al consumidor.</div>
+                        <div class="panel p-4 left-accent"><strong>Ley 1480, art. 1 y 2:</strong> norma de orden público que regula derechos y responsabilidades en relaciones de consumo.</div>
+                        <div class="panel p-4 left-accent"><strong>Ámbito:</strong> aplica de forma general y supletoria cuando no exista régimen especial sectorial.</div>
+                        <div class="panel p-4 left-accent"><strong>Autoridad central:</strong> SIC con funciones administrativas (IVC) y jurisdiccionales.</div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <!-- FOTO 1 (DIAPOSITIVA 3): Mapa conceptual Constitución + Ley 1480 + SIC + ciudadanía. Archivo usado: images/imagen1.jpeg -->
+                    <div class="photo-slot">
+                        <img src="images/imagen1.jpeg" alt="Mapa conceptual de la Ley 1480 y la SIC">
+                    </div>
+                    <div class="panel p-5 bg-blue-50 text-sm">
+                        <p class="font-bold text-[#0056b3] mb-1">Idea fuerza</p>
+                        <p>La ley corrige la asimetría entre consumidor y mercado: protege derechos, impone deberes empresariales y ofrece rutas para exigir cumplimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Derechos del consumidor</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[#0056b3] mb-6">Derechos clave (Ley 1480, art. 3 y títulos relacionados)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+                    <div class="panel p-4 left-accent"><strong>Calidad e idoneidad:</strong> recibir bienes y servicios aptos para su uso.</div>
+                    <div class="panel p-4 left-accent"><strong>Seguridad:</strong> protección frente a riesgos para salud e integridad.</div>
+                    <div class="panel p-4 left-accent"><strong>Información completa:</strong> clara, veraz, suficiente, oportuna y en castellano.</div>
+                    <div class="panel p-4 left-accent"><strong>Protección contra publicidad engañosa:</strong> lo anunciado obliga al anunciante.</div>
+                    <div class="panel p-4 left-accent"><strong>Garantía legal:</strong> reparación, reposición o devolución del dinero según el caso.</div>
+                    <div class="panel p-4 left-accent"><strong>Protección contractual:</strong> cláusulas abusivas son ineficaces de pleno derecho.</div>
+                    <div class="panel p-4 left-accent"><strong>Reclamación y acceso a justicia:</strong> reclamar, denunciar o demandar.</div>
+                    <div class="panel p-4 left-accent"><strong>Libre elección:</strong> decisiones informadas sin inducción a error.</div>
+                    <div class="panel p-4 left-accent"><strong>Especial protección a menores:</strong> rigor reforzado en seguridad y publicidad.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="slide-chip mb-4">Deberes empresariales I</p>
+                    <h2 class="text-3xl font-extrabold text-[#0056b3] mb-5">Deberes de productores y proveedores</h2>
+                    <div class="space-y-3 text-sm md:text-base">
+                        <div class="panel p-4 left-accent"><strong>Calidad, idoneidad y seguridad:</strong> responder por el estado y funcionamiento del producto.</div>
+                        <div class="panel p-4 left-accent"><strong>Garantía legal:</strong> asumir costos de reparación, transporte y repuestos.</div>
+                        <div class="panel p-4 left-accent"><strong>Términos de garantía:</strong> si no se informa, en bienes nuevos aplica término legal general de 1 año.</div>
+                        <div class="panel p-4 left-accent"><strong>Repuestos e insumos:</strong> disponibilidad durante el término informado o el habitual del mercado.</div>
+                        <div class="panel p-4 left-accent"><strong>Manuales en castellano:</strong> indispensables para uso correcto y exoneraciones por mal uso.</div>
+                    </div>
+                </div>
+                <div class="panel p-6 bg-slate-50">
+                    <h3 class="font-bold text-[#0056b3] text-xl mb-4">Exoneración de garantía (debe probarla la empresa)</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex gap-3"><div class="step-number">1</div><p><strong>Fuerza mayor o caso fortuito.</strong></p></div>
+                        <div class="flex gap-3"><div class="step-number">2</div><p><strong>Hecho de un tercero</strong> ajeno a la cadena de producción/comercialización.</p></div>
+                        <div class="flex gap-3"><div class="step-number">3</div><p><strong>Uso indebido del bien</strong> por el consumidor.</p></div>
+                        <div class="flex gap-3"><div class="step-number">4</div><p><strong>Incumplimiento de instrucciones</strong> debidamente suministradas.</p></div>
+                    </div>
+                    <p class="mt-4 text-xs text-slate-600">Si la empresa no acredita técnicamente la causal, responde por garantía.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div class="md:col-span-7">
+                    <p class="slide-chip mb-4">Deberes empresariales II</p>
+                    <h2 class="text-3xl font-extrabold text-[#0056b3] mb-5">Información, publicidad, contratos y PQR</h2>
+                    <div class="grid grid-cols-1 gap-3 text-sm">
+                        <div class="panel p-4 left-accent"><strong>Información mínima:</strong> precio total, condiciones, restricciones, uso y riesgos relevantes.</div>
+                        <div class="panel p-4 left-accent"><strong>Publicidad verificable:</strong> se prohíbe inducir a error; las condiciones objetivas anunciadas son exigibles.</div>
+                        <div class="panel p-4 left-accent"><strong>Promociones y ofertas:</strong> deben informar vigencia, unidades y condiciones de redención.</div>
+                        <div class="panel p-4 left-accent"><strong>Cláusulas abusivas:</strong> no pueden limitar derechos, invertir carga probatoria o imponer renuncias.</div>
+                        <div class="panel p-4 left-accent"><strong>Gestión PQR:</strong> responder reclamos directos en máximo 15 días hábiles.</div>
+                    </div>
+                </div>
+                <div class="md:col-span-5 space-y-4">
+                    <!-- FOTO 2 (DIAPOSITIVA 6): Comparación publicidad vs condiciones reales de venta. Archivo usado: images/imagen2.jpg -->
+                    <div class="photo-slot">
+                        <img src="images/imagen2.jpg" alt="Comparación entre publicidad y condiciones reales de venta">
+                    </div>
+                    <div class="panel p-5 bg-amber-50 border border-amber-200 text-sm">
+                        <p class="font-bold text-amber-900">Riesgo alto de sanción SIC</p>
+                        <p class="text-amber-900 mt-1">Publicidad engañosa + incumplimiento de promociones + silencio frente a reclamos del consumidor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Garantía legal</p>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-[#0056b3] mb-6">Cómo opera la garantía en la práctica</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                    <div class="panel p-5">
+                        <h3 class="font-bold text-lg text-[#0056b3] mb-3">Primera respuesta</h3>
+                        <p>La regla general es <strong>reparación gratuita</strong>, incluyendo mano de obra, repuestos y transporte cuando corresponda.</p>
+                    </div>
+                    <div class="panel p-5">
+                        <h3 class="font-bold text-lg text-[#0056b3] mb-3">Si persiste la falla</h3>
+                        <p>El consumidor puede exigir <strong>nueva reparación, reposición</strong> del bien o <strong>devolución del dinero</strong>.</p>
+                    </div>
+                    <div class="panel p-5">
+                        <h3 class="font-bold text-lg text-[#0056b3] mb-3">Servicios con entrega de bien</h3>
+                        <p>Si un taller/lavandería causa daño: debe reparar, sustituir o pagar equivalente si el daño es irreversible.</p>
+                    </div>
+                </div>
+                <div class="panel p-5 mt-5 bg-blue-50 text-sm">
+                    <p><strong>Importante:</strong> la factura ayuda probatoriamente, pero no siempre es requisito absoluto para ejercer la garantía si se puede demostrar la compra por otros medios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div>
+                    <p class="slide-chip mb-4">Producto defectuoso</p>
+                    <h2 class="text-3xl font-extrabold text-[#0056b3] mb-5">Responsabilidad por seguridad y daños</h2>
+                    <div class="space-y-3 text-sm">
+                        <div class="panel p-4 left-accent"><strong>Responsabilidad solidaria:</strong> productor y proveedor responden por daños causados por productos defectuosos.</div>
+                        <div class="panel p-4 left-accent"><strong>Daños indemnizables:</strong> lesión personal y afectación a otros bienes derivados del defecto.</div>
+                        <div class="panel p-4 left-accent"><strong>Campañas de seguridad:</strong> al detectar riesgo grave, la empresa debe informar y activar recall.</div>
+                        <div class="panel p-4 left-accent"><strong>Plazo de reporte:</strong> informar a la autoridad en término breve (en la práctica, SIC exige reacción inmediata).</div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <!-- FOTO 3 (DIAPOSITIVA 8): Flujo visual de campaña de seguridad/recall. Archivo usado: images/imagen3.jpeg -->
+                    <div class="photo-slot">
+                        <img src="images/imagen3.jpeg" alt="Flujo de campaña de seguridad y recall de producto">
+                    </div>
+                    <div class="panel p-5 bg-red-50 border border-red-200 text-sm text-red-900">
+                        <p class="font-bold mb-1">Error crítico empresarial</p>
+                        <p>Ocultar un riesgo de seguridad puede escalar a sanciones altas, daño reputacional y litigios masivos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Comercio electrónico</p>
+                <h2 class="text-3xl font-extrabold text-[#0056b3] mb-6">E-commerce: deberes reforzados y derechos clave</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm md:text-base">
+                    <div class="panel p-5 left-accent"><strong>Identificación plena:</strong> NIT, dirección, canales de contacto y notificación judicial.</div>
+                    <div class="panel p-5 left-accent"><strong>Información antes de pagar:</strong> disponibilidad, tiempos de entrega, costo final y restricciones.</div>
+                    <div class="panel p-5 left-accent"><strong>Derecho de retracto:</strong> regla general de 5 días hábiles para ventas a distancia/no tradicionales.</div>
+                    <div class="panel p-5 left-accent"><strong>Devolución del dinero:</strong> en e-commerce, la Ley 2439 de 2024 fortaleció plazos y trazabilidad de PQR.</div>
+                    <div class="panel p-5 left-accent"><strong>Reversión del pago:</strong> procede en fraude, operación no solicitada, no entrega o producto defectuoso/no conforme.</div>
+                    <div class="panel p-5 left-accent"><strong>Portales de contacto:</strong> deben conservar y suministrar datos mínimos del oferente.</div>
+                </div>
+                <p class="text-xs text-slate-600 mt-4">Recomendación práctica: siempre guardar soporte de compra, chat, correo y número de radicado.</p>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Protección contractual</p>
+                <h2 class="text-3xl font-extrabold text-[#0056b3] mb-6">Cláusulas abusivas: ejemplos de ineficacia de pleno derecho</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="panel p-5 left-accent"><strong>Renuncia a la garantía o retracto:</strong> inválida por afectar derechos mínimos legales.</div>
+                    <div class="panel p-5 left-accent"><strong>Exoneración total de responsabilidad:</strong> inválida cuando desconoce deberes legales del proveedor.</div>
+                    <div class="panel p-5 left-accent"><strong>Inversión de carga de la prueba:</strong> inválida si traslada injustificadamente al consumidor pruebas técnicas.</div>
+                    <div class="panel p-5 left-accent"><strong>Atar contratos sin libertad real:</strong> condicionar un producto a otro sin opción razonable puede ser abusivo.</div>
+                </div>
+                <div class="panel p-5 mt-5 bg-emerald-50 border border-emerald-200 text-sm">
+                    <p><strong>Regla operativa:</strong> en contratos de adhesión, la duda interpretativa se resuelve a favor del consumidor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <p class="slide-chip mb-4">Ruta institucional</p>
+                    <h2 class="text-3xl font-extrabold text-[#0056b3] mb-5">¿Qué hacer cuando se vulnera un derecho?</h2>
+                    <div class="space-y-3 text-sm">
+                        <div class="panel p-4 left-accent"><strong>Paso 1:</strong> reclamación directa al proveedor/productor.</div>
+                        <div class="panel p-4 left-accent"><strong>Paso 2:</strong> esperar respuesta (hasta 15 días hábiles).</div>
+                        <div class="panel p-4 left-accent"><strong>Paso 3A:</strong> denuncia ante SIC para interés general y posible sanción.</div>
+                        <div class="panel p-4 left-accent"><strong>Paso 3B:</strong> demanda de protección al consumidor para solución individual.</div>
+                        <div class="panel p-4 left-accent"><strong>Alternativa:</strong> SIC Facilita para acuerdo voluntario rápido.</div>
+                    </div>
+                </div>
+                <div class="panel p-6 bg-slate-50 text-sm">
+                    <h3 class="font-bold text-[#0056b3] text-xl mb-4">Denuncia vs demanda</h3>
+                    <div class="space-y-3">
+                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                            <p class="font-semibold">Denuncia administrativa</p>
+                            <p>Busca proteger el mercado y castigar infracciones. Puede terminar en multa, sin reparación individual directa.</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                            <p class="font-semibold">Demanda (acción de protección)</p>
+                            <p>Busca reparación concreta del caso: garantía, cambio, devolución o cumplimiento contractual.</p>
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-slate-200">
+                            <p class="font-semibold">Requisito clave para demandar</p>
+                            <p>Acreditar reclamación directa previa y conservar soportes de radicación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div>
+                    <p class="slide-chip mb-4">Superintendencia de Industria y Comercio</p>
+                    <h2 class="text-3xl font-extrabold text-[#0056b3] mb-5">¿Qué hace la SIC en protección al consumidor?</h2>
+                    <div class="space-y-3 text-sm">
+                        <div class="panel p-4 left-accent"><strong>Autoridad nacional de IVC:</strong> inspecciona, vigila y controla el cumplimiento de la Ley 1480.</div>
+                        <div class="panel p-4 left-accent"><strong>Función administrativa:</strong> investiga, ordena correcciones y puede sancionar conductas que afecten el mercado.</div>
+                        <div class="panel p-4 left-accent"><strong>Función jurisdiccional:</strong> actúa como juez especializado en acciones de protección al consumidor.</div>
+                        <div class="panel p-4 left-accent"><strong>Red territorial:</strong> articula alcaldías y Casas del Consumidor para acercar rutas de atención.</div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="panel p-5 bg-blue-50 border border-blue-200 text-sm">
+                        <p class="font-bold text-[#0056b3] mb-2">Facultades y medidas relevantes</p>
+                        <p>Puede ordenar cese/corrección de publicidad, suspensión de comercialización y otras medidas preventivas y correctivas.</p>
+                    </div>
+                    <div class="panel p-5 bg-amber-50 border border-amber-200 text-sm">
+                        <p class="font-bold text-amber-900 mb-2">Componente sancionatorio</p>
+                        <p>La ley contempla multas que pueden llegar hasta 2.000 SMLMV y otras sanciones según gravedad y reincidencia.</p>
+                    </div>
+                    <!-- FOTO 4 (DIAPOSITIVA 12): Mapa de la Ruta del Consumidor y cobertura territorial SIC. Archivo usado: images/imagen4.jpeg -->
+                    <div class="photo-slot">
+                        <img src="images/imagen4.jpeg" alt="Mapa de la Ruta del Consumidor y cobertura territorial de la SIC">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Denuncia Administrativa</p>
+                <h2 class="text-3xl font-extrabold text-[#0056b3] mb-6">Cuándo aplica la denuncia ante la SIC</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="panel p-5 left-accent"><strong>Finalidad:</strong> proteger el interés general y corregir prácticas que afectan a muchos consumidores.</div>
+                    <div class="panel p-5 left-accent"><strong>Casos típicos:</strong> publicidad engañosa, incumplimiento de promociones, fallas de información de precios o seguridad.</div>
+                    <div class="panel p-5 left-accent"><strong>Resultado esperado:</strong> investigación administrativa, órdenes de corrección y posible sanción a favor del Estado.</div>
+                    <div class="panel p-5 left-accent"><strong>Límite clave:</strong> no busca, por sí sola, devolución de dinero o reparación individual del denunciante.</div>
+                    <div class="panel p-5 left-accent"><strong>Prueba útil:</strong> piezas publicitarias, facturas, capturas, radicados y cualquier evidencia verificable.</div>
+                    <div class="panel p-5 left-accent"><strong>Cuándo conviene:</strong> cuando quieres activar control de mercado y frenar una práctica masiva o reiterada.</div>
+                </div>
+                <div class="panel p-5 mt-5 bg-slate-50 text-sm">
+                    <p><strong>Idea práctica:</strong> la denuncia y la demanda pueden coexistir, porque persiguen objetivos distintos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Demanda Jurisdiccional</p>
+                <h2 class="text-3xl font-extrabold text-[#0056b3] mb-6">Cuándo aplica la acción de protección al consumidor</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="panel p-5 left-accent"><strong>Finalidad:</strong> obtener una decisión judicial para tu caso concreto (garantía, devolución, cumplimiento).</div>
+                    <div class="panel p-5 left-accent"><strong>Requisito de procedibilidad:</strong> agotar reclamación directa previa ante proveedor/productor y conservar soporte.</div>
+                    <div class="panel p-5 left-accent"><strong>Competencia:</strong> SIC o juez de la República, a prevención.</div>
+                    <div class="panel p-5 left-accent"><strong>Pretensiones posibles:</strong> cambio, reparación, devolución del dinero y otras órdenes según el caso.</div>
+                    <div class="panel p-5 left-accent"><strong>Términos relevantes:</strong> para efectividad de garantía, regla general de 1 año desde su expiración; otros asuntos tienen reglas propias de oportunidad.</div>
+                    <div class="panel p-5 left-accent"><strong>Resultado esperado:</strong> sentencia u orden obligatoria para las partes.</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5 text-sm">
+                    <div class="qa-answer">
+                        <p class="font-bold mb-1">Usa denuncia si...</p>
+                        <p>tu objetivo principal es que la autoridad investigue y sancione una práctica que afecta al mercado.</p>
+                    </div>
+                    <div class="qa-answer">
+                        <p class="font-bold mb-1">Usa demanda si...</p>
+                        <p>necesitas que un juez ordene una solución concreta para tu perjuicio individual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-[#0056b3] text-white">
+            <div class="h-full p-6 md:p-12 flex flex-col justify-center">
+                <p class="slide-chip !bg-white !text-[#0056b3] border-0 mb-4 w-fit">Preguntas a la audiencia</p>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-8">Pensemos primero, respondemos enseguida</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm md:text-base">
+                    <div class="qa-question">1. Si un almacén ofrece solo bono y no dinero por una falla reiterada, ¿es válido?</div>
+                    <div class="qa-question">2. Si el producto estaba en oferta, ¿se pierde la garantía legal?</div>
+                    <div class="qa-question">3. En compras online, ¿qué diferencia hay entre retracto y reversión del pago?</div>
+                    <div class="qa-question">4. ¿Siempre debo demandar para que me respondan un reclamo?</div>
+                    <div class="qa-question">5. ¿Cuándo conviene denunciar y cuándo demandar ante la SIC?</div>
+                    <div class="qa-question">6. ¿Qué evidencia mínima debo guardar como consumidor?</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-slate-50">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Respuestas guiadas I</p>
+                <h2 class="text-3xl font-extrabold text-[#0056b3] mb-6">Respuestas a las preguntas 1 a 3</h2>
+                <div class="space-y-4 text-sm md:text-base">
+                    <div class="qa-answer">
+                        <p class="font-bold mb-1">1) Bono vs devolución de dinero</p>
+                        <p>Si no hay reparación efectiva o la falla persiste, el consumidor puede optar por reposición o devolución del dinero. Imponer solo bono desconoce la garantía legal.</p>
+                    </div>
+                    <div class="qa-answer">
+                        <p class="font-bold mb-1">2) Producto en oferta</p>
+                        <p>La oferta no elimina derechos. El producto en descuento debe cumplir calidad, idoneidad y seguridad igual que cualquier otro.</p>
+                    </div>
+                    <div class="qa-answer">
+                        <p class="font-bold mb-1">3) Retracto vs reversión</p>
+                        <p>Retracto: desistimiento unilateral (regla general de 5 días hábiles en ventas a distancia). Reversión: mecanismo de pago electrónico por fraude, no entrega o no conformidad, entre otros supuestos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div>
+                    <p class="slide-chip mb-4">Respuestas guiadas II</p>
+                    <h2 class="text-3xl font-extrabold text-[#0056b3] mb-6">Respuestas a las preguntas 4 a 6</h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <div class="qa-answer">
+                            <p class="font-bold mb-1">4) ¿Siempre hay que demandar?</p>
+                            <p>No. Primero procede el reclamo directo y puede resolverse por acuerdo o SIC Facilita. La demanda es la vía judicial del caso individual cuando no hay solución.</p>
+                        </div>
+                        <div class="qa-answer">
+                            <p class="font-bold mb-1">5) ¿Denunciar o demandar?</p>
+                            <p>Denuncia: interés general y eventual sanción. Demanda: obtener reparación concreta para tu caso. Son vías distintas y en ciertos casos coexistentes.</p>
+                        </div>
+                        <div class="qa-answer">
+                            <p class="font-bold mb-1">6) Evidencia mínima útil</p>
+                            <p>Factura o comprobante, pantallazos de oferta/publicidad, chats/correos, guía de entrega y número de radicado del reclamo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOTO 5 (DIAPOSITIVA 17): Ejemplo de expediente probatorio mínimo (factura, capturas, radicado). Archivo usado: images/imagen5.jpg -->
+                <div class="photo-slot">
+                    <img src="images/imagen5.jpg" alt="Ejemplo de expediente probatorio mínimo para una reclamación">
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-white">
+            <div class="h-full p-6 md:p-12">
+                <p class="slide-chip mb-4">Tips empresariales</p>
+                <h2 class="text-3xl font-extrabold text-[#0056b3] mb-5">5 tips simples para cumplir la Ley 1480</h2>
+                <div class="grid grid-cols-1 gap-3 text-sm">
+                    <div class="panel p-3 left-accent"><strong>1.</strong> Informa todo claro: precio final, condiciones y restricciones, sin letra escondida.</div>
+                    <div class="panel p-3 left-accent"><strong>2.</strong> Responde cada reclamo a tiempo: máximo 15 días hábiles.</div>
+                    <div class="panel p-3 left-accent"><strong>3.</strong> Cumple la garantía sin trabas: reparar, cambiar o devolver el dinero cuando corresponda.</div>
+                    <div class="panel p-3 left-accent"><strong>4.</strong> En ventas online, deja visibles tiempos de entrega, retracto y reversión del pago.</div>
+                    <div class="panel p-3 left-accent"><strong>5.</strong> Guarda evidencia de todo (ventas, PQR, respuestas y campañas), para prevenir sanciones.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-[#0056b3] text-white">
+            <div class="h-full p-6 md:p-12 flex flex-col justify-center items-center text-center">
+                <p class="slide-chip !bg-white !text-[#0056b3] border-0 mb-4">Cierre</p>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Conclusiones centrales</h2>
+                <div class="max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-4 text-sm md:text-base text-left">
+                    <div class="panel bg-white/10 border border-white/20 p-5">
+                        <p class="font-bold mb-2">Consumidor</p>
+                        <p>Tiene derechos exigibles, pero debe actuar con diligencia y conservar evidencia.</p>
+                    </div>
+                    <div class="panel bg-white/10 border border-white/20 p-5">
+                        <p class="font-bold mb-2">Empresa</p>
+                        <p>Debe prevenir riesgos, atender PQR, cumplir garantías y comunicar con transparencia.</p>
+                    </div>
+                    <div class="panel bg-white/10 border border-white/20 p-5">
+                        <p class="font-bold mb-2">Estado/SIC</p>
+                        <p>Vigila, sanciona e imparte justicia técnica para equilibrar el mercado.</p>
+                    </div>
+                </div>
+                <p class="mt-10 text-blue-100">Gracias por su atención • banrepculturalmanizales@banrep.gov.co</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const progressFill = document.getElementById('progressFill');
+        const slideCounter = document.getElementById('slideCounter');
+
+        function updateSlide() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === currentSlide) slide.classList.add('active');
+            });
+
+            const progress = (currentSlide / (slides.length - 1)) * 100;
+            progressFill.style.width = `${progress}%`;
+            slideCounter.textContent = `${currentSlide + 1} / ${slides.length}`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+
+        updateSlide();
+    </script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+El Estatuto del Consumidor en Colombia: análisis normativo e institucional con énfasis en la SIC
+Resumen ejecutivo
+El Estatuto del Consumidor (Ley 1480 de 2011) constituye el marco general de orden público que regula derechos, deberes y responsabilidades en las relaciones de consumo, así como mecanismos administrativos y jurisdiccionales para su exigibilidad, aplicable de manera transversal a la economía salvo que exista régimen especial, caso en el cual este se aplica de forma preferente y la Ley 1480 opera supletoriamente. 
+
+En el diseño del sistema, la autoridad central para inspección, vigilancia y control (IVC) en protección al consumidor es la Superintendencia de Industria y Comercio (en adelante, SIC), con potestades para investigar, impartir instrucciones, ordenar medidas (p. ej., cese de publicidad engañosa) e imponer sanciones. 
+ En lo sancionatorio, la Ley prevé multas hasta 2.000 SMLMV, cierres temporales, cierre definitivo o retiro de páginas web (en reincidencia), prohibiciones de producción/comercialización y destrucción de productos, entre otras medidas. 
+ La graduación de multas exige valorar criterios como daño, persistencia, reincidencia, beneficio económico, uso de medios fraudulentos y diligencia del infractor. 
+
+La exigibilidad de derechos combina rutas: (i) reclamo directo ante productor/proveedor como requisito de procedibilidad para la acción jurisdiccional de protección al consumidor, (ii) denuncia administrativa (interés general) y (iii) demanda (solución del caso individual: garantía, devolución de dinero, indemnización en ciertos supuestos), además de mecanismos alternativos y pedagógicos. 
+ La propia SIC diferencia pedagógicamente que la demanda busca una reparación individual (p. ej., garantía, cambio o devolución), mientras que la denuncia busca activar una investigación administrativa que puede terminar en multa sin “reparación” directa para el denunciante. 
+
+Un hito reciente es la Ley 2439 de 2024, que modifica la Ley 1480 y refuerza la protección del consumidor en comercio electrónico, incluyendo: plazos más exigentes para devolución de dinero por retracto en e-commerce (15 días), deberes reforzados de información de productos/servicios, trazabilidad de PQR con radicado y seguimiento en canales digitales, reglas de entrega y devolución cuando hay mora o indisponibilidad y ajustes en facultades administrativas. 
+
+En práctica sancionatoria, la SIC hace público un conjunto de casos “emblemáticos” (p. ej., sanción máxima a una plataforma de domicilios; multas en telecomunicaciones por publicidad engañosa; sanciones en retail por incumplimientos de promociones/entrega), con montos que en varios eventos superan los mil millones de pesos. 
+
+Texto y estructura de la Ley 1480 de 2011
+Estructura general (títulos temáticos)
+Aunque la Ley 1480 es extensa, su arquitectura normativa se entiende mejor por “bloques”:
+
+Núcleo conceptual (objeto, ámbito, derechos, definiciones): fija objeto y aplicabilidad general a relaciones de consumo; define “consumidor”, “proveedor”, “garantía”, “publicidad engañosa”, “ventas a distancia”, etc. 
+Garantías (Título III): regula garantía legal, términos, reglas para usados, condiciones de reparación/cambio/devolución. 
+Responsabilidad por producto defectuoso (Título IV): incluye deber de informar riesgos y régimen de responsabilidad solidaria por daños, con exoneraciones tasadas. 
+Información al consumidor (Título V): fija mínimo informativo (claro, veraz, suficiente, etc.) y responsabilidad por daño derivado de información inadecuada. 
+Publicidad y promociones (Título VI): prohíbe publicidad engañosa; hace vinculantes condiciones objetivas anunciadas; regula promociones y ofertas. 
+Protección contractual y modalidades especiales (Título VII): cláusulas abusivas, ventas no tradicionales/a distancia, retracto, comercio electrónico, reversión de pago y portales de contacto (con ajustes posteriores). 
+Aspectos procedimentales e institucionalidad (Título VIII): acciones jurisdiccionales, procedimiento verbal sumario, poderes administrativos, sanciones y Red Nacional de Protección al Consumidor. 
+Artículos clave y su contenido práctico
+La siguiente tabla sintetiza artículos “de uso cotidiano” (no agota la ley). En caso de conflicto interpretativo, prima el texto oficial.
+
+Artículo / bloque	Contenido esencial	Implicación práctica
+Art. 2 (Objeto y ámbito)	Regula derechos/obligaciones entre productores, proveedores y consumidores; aplica como régimen general salvo regulación especial. 
+Antes de reclamar, verificar si el sector tiene régimen propio (financiero, servicios públicos, etc.); si no, Ley 1480 es base.
+Art. 3 (Derechos del consumidor)	Incluye, entre otros, derechos a información completa y protección contra publicidad engañosa, reclamación, protección contractual y libre elección. 
+“Checklist” de derechos exigibles en PQR, denuncia o demanda.
+Art. 5 (Definiciones)	Define conceptos operativos: consumidor/usuario (destinatario final), garantía, publicidad engañosa, venta a distancia, etc. 
+Determina si hay relación de consumo y qué estándar aplica (p. ej., “publicidad engañosa”).
+Arts. 7–8 (Garantía legal y término)	Garantía legal como obligación de responder por calidad/idoneidad/seguridad; si no indican término, bienes nuevos: 1 año; usados: pueden venderse sin garantía si se informa y acepta por escrito (si no, 3 meses). 
+Empresas deben documentar términos; consumidores deben conservar evidencia mínima (factura ayuda pero no siempre es condición).
+Art. 23 (Información mínima)	Información clara, veraz, suficiente, etc., en castellano; responsabilidad por daños por información inadecuada. 
+Base para reclamos por “me ofrecieron X y entregaron Y”; conecta con publicidad (Título VI).
+Arts. 29–33 (Publicidad y promociones)	Publicidad obliga en condiciones objetivas; publicidad engañosa prohibida; anunciante responde por perjuicios; reglas de promociones/ofertas (condiciones, vigencia, “hasta agotar inventario” e intensidad de revocatoria). 
+Si una promoción no informa unidades o vigencia, se interpreta a favor del consumidor según reglas del art. 33.
+Arts. 42–43 (Cláusulas abusivas)	Prohíbe cláusulas abusivas; lista de cláusulas ineficaces de pleno derecho (p. ej., renuncia de derechos, inversión de carga probatoria, presunción de voluntad). 
+Herramienta clave para defenderse de contratos de adhesión desbalanceados (telecom, membresías, etc.).
+Art. 47 (Retracto) + modif. 2024	Retracto en financiación, tiempos compartidos y ventas a distancia/no tradicionales; regla general 5 días hábiles; devolución de dinero sin descuentos; plazo general de devolución hasta 30 días; en comercio electrónico, devolución del dinero no puede exceder 15 días (Ley 2439). 
+Para e-commerce: consumidor debe cumplir deberes de devolución y datos para pago; proveedor debe devolver en 15 días (no “bonos” por regla general del texto).
+Arts. 49–51 (Comercio electrónico y reversión)	Define comercio electrónico; impone deberes de identificación del proveedor, información del producto, condiciones contractuales, resumen del pedido, aceptación expresa; regula reversión del pago (fraude, no recibido, no corresponde, defectuoso) y requisitos temporales. 
+Empresas deben rediseñar checkout, PQR y trazabilidad; consumidores tienen ventana de 5 días hábiles para activar reversión tras “tener noticia” del supuesto.
+Art. 53 (Portales de contacto) + definición 2024	Portales deben exigir y conservar identificación mínima de oferentes y suministrarla a comprador/autoridad; Ley 2439 define “portal de contacto” y fortalece obligaciones asociadas al ecosistema. 
+Relevante en marketplaces: trazabilidad del vendedor y soporte probatorio para reclamar.
+Art. 56 (Acciones jurisdiccionales)	Reconoce populares/grupo (Ley 472), producto defectuoso (jurisdicción ordinaria) y acción de protección al consumidor para violación de normas, garantías, protección contractual y publicidad engañosa. 
+Define qué tipo de acción conviene según el daño (colectivo vs individual vs daños por producto defectuoso).
+Art. 58 (Procedimiento)	Acción de protección al consumidor se tramita por verbal sumario; competencia “a prevención” entre SIC y juez; términos de ejercicio (p. ej., 1 año desde expiración de garantía para efectividad; otros desde conocimiento de hechos); exige anexar reclamación directa previa. 
+Regla de oro: antes de demandar, hacer reclamo directo y guardar soporte (radicado, grabación, constancia).
+Art. 59 (Poderes administrativos SIC)	Investigar, sancionar, instruir, practicar pruebas, ordenar cese/corrección de publicidad, suspender preventivamente producción/comercialización, publicar sancionados, ordenar devoluciones de cobros en exceso, modificar clausulados, etc. 
+Marco para denuncias e IVC; base para órdenes administrativas y prevención.
+Art. 61 (Sanciones y criterios)	Catálogo de sanciones (multas, cierres, retiro de web, destrucción) y criterios para graduar multa (daño, persistencia, reincidencia, beneficio, fraude, diligencia…). 
+Explica por qué en la práctica la SIC puede imponer montos altos y medidas estructurales; orienta defensa empresarial.
+Art. 62 y 75 (Territorio y red)	Alcaldes tienen facultades administrativas similares (con límites y apelación ante SIC) y se crea Red Nacional de Protección al Consumidor con SIC como secretaría técnica. 
+Fundamenta “descentralización” y presencia regional (Casas del Consumidor, articulación local).
+
+Decretos reglamentarios y normas complementarias relevantes
+Decretos reglamentarios (con números y fechas)
+Norma	Fecha (según fuente oficial)	Qué reglamenta / complementa	Observación operativa
+Decreto 0704 de 2012	10 abril 2012 (vigencia ligada a entrada en vigor de Ley 1480: 12 abril 2012) 
+Reglamenta parcialmente el art. 61: ordena aplicar criterios de graduación de multas (parágrafo 1) para imponer las demás sanciones del art. 61. 
+Relevante para defensa sancionatoria: argumentación sobre criterios debe cubrir toda sanción, no solo multa.
+Decreto 2184 de 2012	26 octubre 2012 
+Corrige errores de la Ley 1480 (p. ej., ajustes en numerales citados en acciones jurisdiccionales). 
+Importante en litigios: evita citar numerales “equivocados” en el art. 56/58 según versión.
+Decreto 735 de 2013	17 abril 2013 
+Reglamenta aspectos medulares de la garantía legal y reglas operativas de protección al consumidor (desarrollo del Estatuto). 
+Clave para posventa, talleres, tiempos de respuesta y trazabilidad de garantías.
+Decreto 1499 de 2014	12 agosto 2014 (rige desde 12 octubre 2014) 
+Reglamenta ventas que usan métodos no tradicionales o a distancia: deberes de información y contenido mínimo antes de aceptación, incluyendo informar retracto y reversión. 
+Guía central para televentas, call center, ventas por redes sociales y suscripciones.
+Decreto 1074 de 2015 (Decreto Único MinCIT)	26 mayo 2015 
+Compila/reglamenta el sector comercio; sirve de “contenedor” para capítulos añadidos (p. ej., reversión del pago vía Decreto 587). 
+En cumplimiento, conviene referenciar el numeral 2.2.2… aplicable dentro del DUR.
+Decreto 587 de 2016	11 abril 2016	Reglamenta la reversión del pago del art. 51 y adiciona capítulo al Decreto 1074 (procedimiento y actores). 
+Interactúa con emisores, bancos y sistemas de pago: enfoque probatorio y plazos.
+Decreto 1413 de 2018	relacionado con Diario Oficial 50674 (3 agosto 2018); acto reportado por SIC en transparencia 
+Reglamenta el parágrafo del art. 18 (servicios que suponen entrega de un bien): tratamiento de bienes muebles dejados en abandono; se incorpora al DUR 1074. 
+Útil para talleres, lavanderías, parqueaderos: protocolo antes de disponer del bien.
+Decreto 254 de 2022	23 febrero 2022 
+Reglamenta aspectos del sector turismo (tiempo compartido/membresías turísticas) que se cruzan con escenarios de retracto y protección contractual. 
+En conflictos por membresías, revisar régimen turístico + Estatuto (supletorio).
+
+Normas complementarias destacadas (por impacto práctico)
+Ley 1935 de 2018 (propinas): adiciona una competencia específica de vigilancia sobre voluntariedad de propina dentro de facultades administrativas de la SIC (reflejada como numeral adicionado al art. 59 en la compilación). 
+Ley 2439 de 2024: moderniza el Estatuto para comercio electrónico (retracto 15 días, trazabilidad de PQR, información reforzada y ajustes de competencia/medidas). 
+Línea de tiempo normativa (hitos seleccionados)
+2011-10-12
+Ley 1480 (Estatutodel Consumidor)publicada en DiarioOficial 48220
+2012-04-10
+Decreto 0704reglamentaparcialmente art. 61(criteriossancionatorios)
+2012-10-26
+Decreto 2184 corrigeerrores del Estatuto(referencias ynumerales)
+2013-04-17
+Decreto 0735desarrolla reglasreglamentarias(garantía yprotección)
+2014-08-12
+Decreto 1499reglamenta ventasno tradicionales y adistancia
+2015-05-26
+Decreto 1074 (DURMinCIT) compilaregulación sectorial
+2016-04-11
+Decreto 587reglamenta reversióndel pago (art. 51) víaDUR 1074
+2018-08-03
+Decreto 1413reglamenta bienesabandonados enprestación deservicios
+2018-08-03
+Ley 1935 fortalecereglas sobre propinasy vigilancia asociada
+2024-12-19
+Ley 2439 refuerzaprotección delconsumidor encomercio electrónico
+Hitos normativos del Estatuto del Consumidor y su desarrollo
+
+
+Mostrar código
+Guías, circulares, capacitaciones, boletines y material informativo oficial de la SIC
+Circularidad e instrucciones (Circular Única y normativa administrativa)
+Un insumo central de cumplimiento es la Circular Única (compilación de instrucciones), cuyo Título II (Protección al Consumidor) organiza reglas por temas (calidad e idoneidad, información y publicidad, indicación pública de precios, vueltas correctas, propina, PQR, etc.). 
+
+Esto importa porque la Ley 1480 habilita expresamente a la SIC para instruir sobre la manera de cumplir el régimen (facultad interpretativa–operativa) y para fijar criterios/procedimientos. 
+
+Guías y material pedagógico (orientación + prevención)
+La propia SIC publica guías que declaran su vocación orientativa y educativa. Un ejemplo prioritario (por el peso actual del canal digital) es la “Guía para la protección del consumidor en el comercio electrónico”, que estructura recomendaciones por: información, publicidad/promociones, calidad, seguridad, retracto, reversión del pago, protección contractual y aspectos procesales (reclamos, órdenes de la SIC, denuncias y demandas). 
+
+En el portal temático de protección al consumidor, la SIC también organiza contenido explicativo por “problema tipo” (p. ej., fallas en un producto, baja calidad e incumplimiento de garantías), útil para traducir la Ley 1480 a decisiones prácticas de reclamo/denuncia/demanda. 
+
+Herramientas de atención, mediación y trámite
+SIC Facilita: plataforma gratuita donde la SIC actúa como facilitadora de acuerdos voluntarios (chat en tiempo real) para conflictos de consumo, con el propósito de resolver sin demanda o denuncia formal (cuando aplica). 
+Denuncias y demandas (guía de ruta): página oficial que explica diferencias entre demandar (solución individual: garantía/devolución/indemnización en supuestos) y denunciar (interés general y posible multa), y remite a formularios para cada vía. 
+Casas del Consumidor (presencia territorial): puntos de orientación gratuita; la SIC ha informado, por ejemplo, cobertura nacional y aperturas recientes como parte de la RNPC. 
+Boletines y reporte público de decisiones
+La SIC sostiene un Boletín Jurídico como repositorio público con filtros por temática (incluye “Protección al Consumidor” y “Asuntos Jurisdiccionales”), donde se publican boletines, normativa y conceptos. 
+
+Adicionalmente, la Delegatura publica boletines temáticos; por ejemplo, el Boletín N.° 6 (diciembre de 2023) explicita que compila decisiones “significativas” y la evolución de políticas de protección al consumidor. 
+
+Como instrumento de rendición de resultados, existe también un informe de gestión/resultados en materia de protección al consumidor (enero–agosto de 2024), con enfoque informativo para el ciudadano. 
+
+Enlaces primarios oficiales clave (para consulta directa)
+Nota técnica: por política de formato, los enlaces se listan en bloque de código (URLs en texto plano).
+
+text
+Copiar
+Ley 1480 de 2011 (Función Pública, Gestor Normativo):
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=44306
+
+Ley 1480 de 2011 (Secretaría del Senado):
+https://www.secretariasenado.gov.co/senado/basedoc/ley_1480_2011.html
+
+Ley 2439 de 2024 (modifica Ley 1480, e-commerce):
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=257116
+
+Decreto 704 de 2012 (parcial art. 61):
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=46862
+
+Decreto 735 de 2013:
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=52653
+
+Decreto 1499 de 2014:
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=58637
+
+Decreto 1074 de 2015 (DUR MinCIT):
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=76608
+
+Decreto 587 de 2016 (reversión del pago):
+https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=68277
+
+Circular Única - Título II Protección al Consumidor (Sede Electrónica SIC):
+https://sedeelectronica.sic.gov.co/sites/default/files/normativa/Titulo%20II-%20Versi%C3%B3n%2028-02-2025..pdf
+
+Boletín Jurídico SIC:
+https://sedeelectronica.sic.gov.co/publicaciones/boletin-juridico
+
+Denuncias y demandas (Sede Electrónica SIC):
+https://sedeelectronica.sic.gov.co/temas/proteccion-al-consumidor/derechos-y-deberes/denuncias-y-demandas
+
+SIC Facilita:
+https://sicfacilita.sic.gov.co/SICFacilita/
+Sistema de protección al consumidor en Colombia: competencias, rutas y procedimientos
+Competencias y “mapa” institucional
+El sistema combina (i) IVC administrativa y (ii) resolución jurisdiccional de controversias:
+
+IVC administrativa (SIC): investigar incumplimientos, practicar pruebas, ordenar correcciones, impartir instrucciones y sancionar. 
+Función jurisdiccional (acción de protección al consumidor): la Ley prevé que el trámite se surta por procedimiento verbal sumario, con competencia “a prevención” entre SIC y juez competente. 
+Desconcentración y red: (a) alcaldes con facultades administrativas similares en su jurisdicción, con límites y apelación ante la SIC; (b) Red Nacional de Protección al Consumidor, con SIC como secretaría técnica, encargada de difusión, traslado de reclamaciones y apoyo a alcaldías. 
+Régimen especial financiero: la Ley reconoce competencias exclusivas para asuntos específicos de consumidor financiero en cabeza de la autoridad sectorial, limitando el alcance de la SIC cuando hay asignación expresa. 
+Ruta práctica de reclamación, queja y litigio
+La lógica operativa (en versión “paso a paso”) puede representarse así:
+
+mermaid
+Copiar
+flowchart TD
+    A[Hecho: posible vulneración] --> B[Reclamo directo al proveedor/productor]
+    B --> C{¿Respuesta o solución satisfactoria?}
+    C -->|Sí| D[Cierre del caso / acuerdo]
+    C -->|No| E[Elegir vía]
+    E --> F[SIC Facilita<br/>si proveedor inscrito y materia aplica]
+    E --> G[Denuncia administrativa ante la SIC<br/>(interés general)]
+    E --> H[Demanda (acción de protección al consumidor)<br/>ante SIC o juez, a prevención]
+    H --> I[Decisión: garantía/devolución/indemnización en supuestos]
+    G --> J[Investigación administrativa]
+    J --> K[Sanción/órdenes (multas, cierres, retiro web, etc.)]
+Elementos jurídicos críticos:
+
+Reclamo directo como requisito para demandar: el art. 58 exige anexar a la demanda la reclamación directa previa (por escrito, telefónica o verbal, con constancia). 
+Términos: demandas por efectividad de garantía deben presentarse dentro del año siguiente a la expiración (y aportar prueba de haber reclamado durante la vigencia); otros casos, dentro del año desde conocimiento de hechos. 
+Denuncia vs demanda: la SIC explica que la denuncia busca proteger interés general y activar investigación/multa, sin reparación directa individual; la demanda persigue reparación individual. 
+Compatibilidad: la SIC admite que un mismo hecho puede ser simultáneamente denunciado y demandado (vías paralelas con finalidades distintas). 
+Tutela y mecanismos constitucionales (uso prudente)
+La acción de tutela es subsidiaria y residual: en regla general no reemplaza mecanismos ordinarios cuando estos existen, lo cual ha sido reiterado en decisiones judiciales que rechazan tutelas orientadas a lograr reembolsos por retracto cuando está disponible la vía ordinaria/jurisdiccional. 
+
+En términos estratégicos: tutela suele ser excepcional en consumo, pero puede surgir cuando el conflicto se conecta con derechos fundamentales (p. ej., debido proceso, petición, salud) o cuando se debate procedencia contra providencias judiciales en casos específicos. 
+
+Tabla comparativa de mecanismos
+Mecanismo	¿Qué busca?	¿Quién decide?	¿Requiere reclamo directo previo?	Resultado típico
+Reclamo directo (PQR)	Solución rápida del caso individual	Empresa/proveedor	No aplica	Respuesta, reparación, cambio, devolución o negativa (soporte para vías posteriores). 
+SIC Facilita	Acuerdo voluntario y rápido	Partes con facilitación SIC	No (pero depende del caso y registro del proveedor en el programa)	Acuerdo; si no hay acuerdo, quedan abiertas denuncia/demanda. 
+Denuncia administrativa	Protección del interés general	SIC (IVC)	No (aunque puede ayudar probatoriamente)	Investigación, órdenes administrativas, sanción (multa/medidas). 
+Demanda protección al consumidor	Reparación individual (garantía, devolución, indemnización en supuestos)	SIC (juez) o juez ordinario (a prevención)	Sí, art. 58	Sentencia/decisión con órdenes concretas (según pretensiones). 
+Acciones populares / grupo	Protección colectiva o reparación a grupo	Jueces (Ley 472)	Depende del caso	Órdenes estructurales / indemnizaciones grupo. Referida por Ley 1480. 
+Tutela (excepcional)	Amparo de derecho fundamental	Juez constitucional	Depende del caso	Orden urgente cuando se cumplen requisitos de subsidiariedad e inmediatez. 
+
+Jurisprudencia y sanciones relevantes (SIC y altas cortes)
+Jurisprudencia (criterios interpretativos y control constitucional)
+Acción de protección al consumidor como acción judicial y competencia “a prevención”: pronunciamientos judiciales han reiterado que la acción tiene naturaleza jurisdiccional y puede ejercerse ante juez o ante la autoridad con funciones jurisdiccionales (la SIC), coherente con el art. 58. 
+Ventas a distancia y deberes de información: en litigios sobre ventas no tradicionales/a distancia, se destaca el carácter obligatorio de informar, antes de la aceptación, la existencia del retracto y la reversión del pago, conforme al desarrollo reglamentario (Decreto 1499) y su armonización con Ley 1480. 
+Publicidad engañosa y responsabilidad del medio: la Corte ha tramitado demandas sobre el art. 30 (parcial) del Estatuto, ligadas al equilibrio entre libertades comunicativas y protección del consumidor. (Resultado específico: no especificado en esta síntesis; se referencia el expediente oficial para consulta directa). 
+Tipicidad y claridad del régimen sancionatorio: decisiones de constitucionalidad han abordado si las infracciones y sanciones del art. 61 cumplen estándares de claridad/seguridad jurídica. 
+Jurisprudencia administrativa/jurisdiccional de la SIC (como juez)
+En el Boletín Jurídico se registran decisiones jurisdiccionales de la SIC con criterios útiles para consumidores y empresas. Un caso notable fija criterios para identificar errores evidentes en precio frente a un consumidor medio (desproporción con precio de mercado, facilidad de detectar el error, ausencia de anuncios de descuento, etc.), lo que incide en disputas típicas de e-commerce/retail. 
+
+Sanciones emblemáticas divulgadas por la SIC (montos cuando están disponibles)
+Alcance: los siguientes casos se toman de comunicados/noticias oficiales de la SIC. La descripción es sintética y no reemplaza la lectura de la resolución/acto administrativo cuando esté publicado.
+
+Caso (según noticia SIC)	Conducta principal reportada	Monto / medida reportada
+Rappi S.A.S. (2020)	Violaciones múltiples: calidad del servicio, información mínima, información de precios, publicidad engañosa, vueltas correctas, cláusulas abusivas, ventas a distancia y comercio electrónico; además, sanción por incumplir orden administrativa previa. 
+$1.755.606.000 (equivalente a 2.000 SMLMV) + $702.242.400 por incumplimiento de orden. 
+COMUNICACIÓN CELULAR S.A. COMCEL S.A. (Claro) (2022)	Publicidad engañosa (tarifa social de internet fijo); información incompleta/inexacta que indujo a error. 
+$2.463.000.000. 
+Novaventa S.A.S. (2025)	Fallas en máquinas dispensadoras y afectación de derechos de información cierta, suficiente y clara. 
+$1.340.032.000. 
+AGORA CONSTRUCCIONES S.A. (2023)	Fallas/incumplimientos en proyecto de vivienda de interés social; afectación a consumidores. 
+1.000 SMLMV (reportado como $1.160.000.000). 
+DIRECTV Colombia Ltda. (2020)	Obstaculización del derecho a presentar reclamaciones por cualquier medio. 
+$400.278.168. 
+COLOMBIA TELECOMUNICACIONES S.A. E.S.P. BIC (Movistar) (2021)	Información/publicidad engañosa en plan prepago. 
+$379.763.868. 
+PEPE GANGA (2021)	Incumplimientos en entrega, fallas en información de precios y régimen de promociones/ofertas. 
+$227.131.500. 
+Flypass (2025)	Irregularidades en prestación del servicio reportadas por usuarios (más de 8 mil, según nota). 
+“Más de 745 millones” (monto exacto no especificado en el fragmento citado). 
+
+Como indicador agregado (no equivalente a estadísticas completas anuales), la SIC informó que “en lo corrido de 2024” se habían impuesto 245 sanciones administrativas por un monto reportado de $9.048.000.000. 
+
+Criterios sancionatorios aplicables (para análisis y defensa)
+La Ley impone criterios de graduación de multas: daño, persistencia, reincidencia, disposición de solucionar, colaboración, beneficio económico, medios fraudulentos/persona interpuesta, diligencia en deberes. 
+El Decreto 0704 de 2012 extiende el uso de criterios de graduación para imponer las demás sanciones del art. 61 (no solo multa), reforzando exigencias de motivación. 
+Recomendaciones prácticas, checklist y propuestas de mejora
+Derechos y deberes esenciales: consumidores responsables vs empresarios responsables
+Consumidor responsable (enfoque de defensa)	Empresario responsable (enfoque de cumplimiento)
+Exigir información completa, verificable y comprensible sobre precio total, condiciones y riesgos; documentar lo ofrecido (capturas, factura, pantallazos). 
+Asegurar información mínima clara, veraz y suficiente; en e-commerce, reforzar descripción técnica y trazabilidad de PQR con radicado/seguimiento (Ley 2439). 
+Activar garantía legal oportunamente, conservar soporte del reclamo durante la vigencia y registrar fechas (compra/entrega/falla). 
+Implementar proceso de posventa: tiempos, repuestos, diagnóstico y respuesta; documentar aceptación de “sin garantía” en usados (si aplica). 
+Frente a publicidad/promociones, exigir cumplimiento de condiciones objetivas; si no hay vigencia/unidades, argumentar conforme regla de art. 33. 
+Validar que publicidad/promociones informen condiciones de modo, tiempo, lugar, unidades y restricciones; evitar mensajes que induzcan a error. 
+En ventas a distancia: ejercer retracto dentro de 5 días hábiles; en e-commerce exigir devolución en 15 días (Ley 2439) cumpliendo deberes de devolución y datos. 
+Diseñar proceso operativo para retracto; en e-commerce, cumplir devolución en 15 días y ofrecer opciones claras de medio de pago/devolución (Ley 2439). 
+Elegir vía correcta: denuncia (interés general) vs demanda (solución individual). 
+Prevenir escalamiento: responder PQR con trazabilidad, ofrecer soluciones y colaborar con autoridad (criterio de graduación). 
+Usar mecanismos alternos cuando aplique (SIC Facilita, Casas del Consumidor). 
+Integrarse a mecanismos de resolución temprana (p. ej., SIC Facilita) para reducir riesgo sancionatorio y reputacional. 
+
+Checklist para consumidores (operativo)
+Antes de comprar: verificar identidad del vendedor (NIT/datos de contacto), condiciones de entrega, retracto y canales de PQR; guardar el “resumen del pedido” en e-commerce. 
+Si hay problema: hacer reclamo directo solicitando solución concreta (reparación/cambio/devolución) y exigir constancia (radicado o prueba de envío). 
+Si no resuelven: elegir ruta: (i) SIC Facilita si aplica y el proveedor está dentro del programa; (ii) denuncia para interés general; (iii) demanda si busca reparación individual. 
+En reversión de pago: actuar en la ventana legal (5 días hábiles) y notificar a proveedor y emisor del medio de pago según requisitos del art. 51. 
+Checklist para empresarios (cumplimiento mínimo verificable)
+Mapa de obligaciones por canal: diferenciar tienda física vs e-commerce; para e-commerce aplicar literales del art. 50 (identidad, info técnica, PQR trazable, resumen previo, aceptación expresa, acuse de recibo). 
+Publicidad y promociones: control interno de piezas publicitarias; archivo probatorio de condiciones; verificación de inventarios para evitar “hasta agotar” sin unidades informadas. 
+Garantías/posventa: procedimiento escrito, tiempos, repuestos y registro de casos; política clara sobre usados y aceptación escrita cuando se vendan sin garantía. 
+Gestión de PQR: canales de entrada, radicado, trazabilidad, respuesta y cierre; en e-commerce, cumplir exigencias reforzadas de Ley 2439. 
+Gestión de riesgos sancionatorios: adoptar medidas de corrección temprana y cooperación con autoridad (criterios de graduación del art. 61). 
+Contratos de adhesión: revisión de cláusulas abusivas; eliminación de presunciones de voluntad por silencio y restricciones desproporcionadas de terminación. 
+Vacíos, retos y propuestas de mejora (con base en la evidencia normativa/institucional)
+Fragmentación y “competencia limitada” percibida por el ciudadano. La propia SIC advierte que su competencia es limitada a ciertos temas y orienta a otras entidades cuando el caso cae por fuera, lo que revela un reto de interoperabilidad institucional y de “traducción” para el consumidor. 
+
+Propuesta: unificar un “triage” interinstitucional (ventanilla única digital) dentro de la RNPC que enrute automáticamente por materia/sector y recopile evidencia estándar (factura, publicidad, PQR).
+
+E-commerce como foco persistente de conflicto (logística, información y posventa). El hecho de que el legislador haya expedido la Ley 2439 para reforzar plazos y trazabilidad confirma que el régimen original requería ajustes ante fricciones recurrentes (entrega, retracto, PQR). 
+
+Propuesta: guías SIC más específicas sobre interfaces engañosas (dark patterns), suscripciones/renovaciones y marketplaces transfronterizos, con estándares probatorios y ejemplos de cumplimiento.
+
+Transparencia y datos abiertos de sanciones. La Ley ordena publicar periódicamente información de sancionados y causas; esto crea oportunidad para analítica pública (sectores, conductas repetidas, reincidencia). 
+
+Propuesta: publicar dataset estructurado (CSV/API) conectado al Boletín Jurídico y al buscador de actos, para facilitar prevención y compliance.
+
+Capacidad territorial y calidad del acompañamiento. La expansión de Casas del Consumidor muestra avance institucional, pero plantea desafío de homogeneidad de criterios y continuidad de servicio. 
+
+Propuesta: estandarizar protocolos de atención y medición de resultados (tiempos de orientación, resoluciones por arreglo directo, derivaciones efectivas).
+
+Debido proceso y motivación sancionatoria. El régimen exige criterios de graduación y el Decreto 704 refuerza que esos criterios deben aplicarse para imponer sanciones, lo que obliga a decisiones bien motivadas y defensas técnicas. 
+
+Propuesta: fortalecer publicaciones pedagógicas sobre cómo se motiva una sanción y cómo se ejerce defensa (sin litigiosidad innecesaria), armonizadas con Boletín Jurídico.
+
