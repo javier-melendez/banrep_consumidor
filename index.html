@@ -213,7 +213,7 @@
                 -webkit-overflow-scrolling: touch;
                 overscroll-behavior: contain;
                 scroll-padding-top: var(--mobile-air-y);
-                scroll-padding-bottom: var(--mobile-air-y);
+                scroll-padding-bottom: calc(var(--mobile-air-y) + 1.1rem);
             }
 
             .slide > div.h-full {
@@ -223,7 +223,7 @@
 
             .slide > div {
                 padding-top: var(--mobile-air-y);
-                padding-bottom: var(--mobile-air-y);
+                padding-bottom: calc(var(--mobile-air-y) + 1.1rem);
             }
 
             .slide.active {
